@@ -25,7 +25,7 @@ subQ1<-unite(subQ1, "Date_Time", Date:Time, remove = FALSE)
 subQ1$Date_Time<-ymd_hms(subQ1$Date_Time)
 
 ##make PNG
-png("plot3.png")
+png("plot3.png", width = 480, height = 480)
 
 ##Plot Graph.
 plot(subQ1$Date_Time, subQ1$Sub_metering_1, col= "gray", type = "l", xlab = "", ylab = "Energy Sub Metering")
