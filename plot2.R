@@ -22,7 +22,7 @@ subQ1<-unite(subQ1, "Date_Time", Date:Time, remove = FALSE)
 subQ1$Date_Time<-ymd_hms(subQ1$Date_Time)
 
 ##make PNG
-png("plot2.png")
+png("plot2.png", width = 480, height = 480)
 
 ##Plot Line Chart
 with(subQ1, plot(Date_Time, Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)"))
